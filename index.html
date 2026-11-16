@@ -1,0 +1,78 @@
+<!--
+  Student Name: Ganna Moussa Abdelkader Bakr
+  Student ID: 225115274
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganna Moussa Abdelkader Bakr | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="brand" href="#home">Ganna Moussa Abdelkader Bakr</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home" class="container">
+        <section class="hero" id="about">
+            <div class="hero-text">
+                <p class="eyebrow">HELLO, I'M</p>
+                <h1>Ganna Moussa Abdelkader Bakr</h1>
+                <p class="intro">A Computer Science student who enjoys learning, creating, and exploring new ideas.</p>
+            </div>
+            <img class="profile-photo" src="images/me.jpg" alt="A photo of me">
+        </section>
+
+        <section id="skills" class="cards-section">
+            <h2>A Little About Me</h2>
+            <div class="card-row">
+                <article class="card">
+                    <h3>My Skills</h3>
+                    <p>HTML, CSS, problem solving, and learning new technologies.</p>
+                </article>
+                <article class="card">
+                    <h3>My Hobbies</h3>
+                    <p>Reading, listening to music, and discovering new things.</p>
+                </article>
+                <article class="card">
+                    <h3>My Goals</h3>
+                    <p>To improve my programming skills and build useful projects.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <form class="contact-form" action="#" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="submit-button">Send</button>
+            </form>
+            <p id="greeting" class="greeting" aria-live="polite"></p>
+        </section>
+
+        <button id="theme-button" class="theme-button" type="button">Switch to dark mode</button>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Ganna Moussa Abdelkader Bakr. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

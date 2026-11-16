@@ -1,0 +1,243 @@
+:root {
+    --background-color: #f5f7fb;
+    --text-color: #222831;
+    --card-background: #ffffff;
+    --accent-color: #536dfe;
+    --muted-color: #667085;
+    --border-color: #e4e7ec;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.site-header {
+    background-color: var(--card-background);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: var(--muted-color);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 25px 0 55px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.eyebrow {
+    color: var(--accent-color);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 5px 0 12px;
+    font-size: clamp(38px, 7vw, 64px);
+    line-height: 1.1;
+}
+
+.intro {
+    max-width: 520px;
+    color: var(--muted-color);
+    font-size: 18px;
+}
+
+.profile-photo {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--card-background);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+    background-color: var(--border-color);
+}
+
+h2 {
+    margin-bottom: 22px;
+    font-size: 28px;
+}
+
+.card-row {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 24px;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+.card p {
+    margin-bottom: 0;
+    color: var(--muted-color);
+}
+
+.contact-section {
+    margin-top: 55px;
+    padding: 30px;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+}
+
+.contact-form {
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.greeting {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.theme-button {
+    margin-top: 24px;
+}
+
+.site-footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--card-background);
+    border-top: 1px solid var(--border-color);
+    color: var(--muted-color);
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+body.dark {
+    --background-color: #171923;
+    --text-color: #f4f4f5;
+    --card-background: #242938;
+    --accent-color: #9aaaff;
+    --muted-color: #b5bdcc;
+    --border-color: #394154;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        width: 190px;
+        height: 190px;
+    }
+
+    .contact-section {
+        padding: 22px;
+    }
+}
